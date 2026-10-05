@@ -1,0 +1,50 @@
+{
+  "name": "@kinginsun/mcp-probot",
+  "version": "0.1.0",
+  "description": "Unified MCP server for Probot-series databases: herb-drug / drug-drug interactions (Probot HDI) and AITEP PDE reports.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-probot": "dist/index.js"
+  },
+  "homepage": "https://github.com/kinginsun/mcp-probot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinginsun/mcp-probot.git"
+  },
+  "license": "MIT",
+  "author": "kinginsun@CUHK",
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "cli",
+    "probot",
+    "drug-interaction",
+    "herb-drug-interaction",
+    "pde",
+    "aitep"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "shx": "^0.3.4",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "probot": {
+      "command": "npx",
+      "args": ["-y", "@kinginsun/mcp-probot"],
+      "env": {
+        "PROBOT_MCP_TOKEN": "${PROBOT_MCP_TOKEN}",
+        "AITEP_API_KEY": "${AITEP_API_KEY}"
+      }
+    }
+  }
+}
