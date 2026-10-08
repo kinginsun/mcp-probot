@@ -1,6 +1,6 @@
 {
   "name": "@kinginsun/mcp-probot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unified MCP server for Probot-series databases: herb-drug / drug-drug interactions (Probot HDI) and AITEP PDE reports.",
   "type": "module",
   "main": "dist/index.js",
